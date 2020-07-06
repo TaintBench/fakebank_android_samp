@@ -191,7 +191,8 @@
         "threading": true
       },
       "ID": 1,
-      "description": "This malicious ICC flow crosses 4 different activities: BankActivity, BankNumActivity BankScardActivity and BankEndActivity. It starts from reading bank account number from user input in BankActivity; when the user performs a click on a button, the BankNumActivity is started; the BankScardActivity and BankEndActivity are also started by clicking on a button. In the first three activities, bank information such as account number, passwords and TAN number are stored into the static fields of the class BankInfo. There are input validations for user inputs to make sure that only valid bank information is collected. In the last activity, all collected information will be read from BankInfo and written to a List. This list will be sent to a remote server per an HTTP POST request."
+      "description": "This malicious ICC flow crosses 4 different activities: BankActivity, BankNumActivity BankScardActivity and BankEndActivity. It starts from reading bank account number from user input in BankActivity; when the user performs a click on a button, the BankNumActivity is started; the BankScardActivity and BankEndActivity are also started by clicking on a button. In the first three activities, bank information such as account number, passwords and TAN number are stored into the static fields of the class BankInfo. There are input validations for user inputs to make sure that only valid bank information is collected. In the last activity, all collected information will be read from BankInfo and written to a List. This list will be sent to a remote server per an HTTP POST request.",
+      "isNegative": false
     },
     {
       "source": {
@@ -272,7 +273,8 @@
         "lifecycle": true
       },
       "ID": 2,
-      "description": "This malicious flow starts by reading the serial number of the SIM card, then writes to the field of the class BankEndActivity, thento a HashMap. Then information in the HashMap will be appended to a String which will be sent to a remote server per an HTTP GET request. "
+      "description": "This malicious flow starts by reading the serial number of the SIM card, then writes to the field of the class BankEndActivity, thento a HashMap. Then information in the HashMap will be appended to a String which will be sent to a remote server per an HTTP GET request. ",
+      "isNegative": false
     },
     {
       "source": {
@@ -332,7 +334,8 @@
         "threading": true
       },
       "ID": 3,
-      "description": "This malicious flow starts by reading the serial number of the SIM card, then writes to a List. This list will be sent to a remote server per an HTTP POST request. "
+      "description": "This malicious flow starts by reading the serial number of the SIM card, then writes to a List. This list will be sent to a remote server per an HTTP POST request. ",
+      "isNegative": false
     },
     {
       "source": {
@@ -393,7 +396,8 @@
         "threading": true
       },
       "ID": 4,
-      "description": "This malicious flow starts by reading SMS message, then writes to a BasicNameValuePair object, then a HashMap. The hashmap will be sent to a rmote server per an HTTP POST request when a Thread created by the class smsReceiver runs.  "
+      "description": "This malicious flow starts by reading SMS message, then writes to a BasicNameValuePair object, then a HashMap. The hashmap will be sent to a rmote server per an HTTP POST request when a Thread created by the class smsReceiver runs.  ",
+      "isNegative": false
     },
     {
       "source": {
@@ -453,7 +457,8 @@
         "pathConstraints": true
       },
       "ID": 5,
-      "description": "This malicous flow installs an apk from sdcard. "
+      "description": "This malicous flow installs an apk from sdcard. ",
+      "isNegative": false
     }
   ]
 }
